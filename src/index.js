@@ -4,17 +4,25 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import App from "./App";
 import "./index.css";
 import Canban from "./routes/Canban";
+import ErrorPage from "./routes/ErrorPage";
 import Home from "./routes/Home";
+import Login from "./routes/Login";
+import Notes from "./routes/Notes";
+import Signin from "./routes/Signin";
 import Todo from "./routes/Todo";
+
+
+
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
-		<Route path="/" element={<App />}>
+		<Route path="/" element={<App />} errorElement={<ErrorPage />}>
 			<Route index element={<Home />} />
 			<Route path="todo" element={<Todo />} />
+			<Route path="notes" element={<Notes />} />
 			<Route path="canban" element={<Canban />} />
-			{/* <Route path="signin" element={<Signin />} /> */}
-			{/* <Route path="login" element={<Login />} /> */}
+			<Route path="signin" element={<Signin />} />
+			<Route path="login" element={<Login />} />
 		</Route>
 	)
 );

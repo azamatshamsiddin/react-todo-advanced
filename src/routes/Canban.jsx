@@ -2,7 +2,7 @@ import React from 'react'
 
 const Canban = () => {
   return (
-    <div>Canban</div>
+    <div className='soon'>Canban Board (soon...)</div>
   )
 }
 

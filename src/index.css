@@ -52,7 +52,7 @@ nav {
 	background-color: #11131b;
 	flex: 1;
 	width: 100%;
-	max-width: 350px;
+	max-width: 300px;
 	height: 100%;
 	box-shadow: rgba(10, 16, 22, 0.48) 6px 2px 16px 0px;
 }
@@ -78,6 +78,8 @@ aside {
 
 .nav {
 	padding: 15px;
+	display: flex;
+	flex-direction: column;
 }
 
 .user {
@@ -97,6 +99,11 @@ aside {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
+}
+
+.user__fullname{
+	font-weight: 600;
+	font-size: 18px;
 }
 
 /* Todo styles  */
@@ -123,6 +130,7 @@ aside {
 
 .add__container {
 	display: flex;
+	/* align-items: center; */
 	gap: 20px;
 }
 .add__input {
@@ -241,10 +249,106 @@ aside {
 .aside__heading{
 	margin-bottom: 20px;
 }
-.aside__chart {
-	/* background-color: #6eb9fc; */
-	border-radius: 14px;
+
+
+.menu__list{
+	gap: 20px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-top: 20px;
 }
-.aside__chart-item {
-	/* border-radius: 14px; */
+
+.menu__item{
+	width: 100%;
+
+}
+.menu__item a{
+	color: #93cdff;
+	font-weight: 600;
+	font-size: 20px;
+	padding: 15px 20px;
+	border: 1px solid #93cdff;
+	border-radius: 14px;
+	width: 100%;
+	transition: all ease .3s;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.menu__item a:hover{
+	background-color: #444750;
+}
+
+
+.logout-btn{
+	margin-top: auto;
+	display: inline-block;
+	padding: 15px 20px;
+	border-radius: 10px;
+	border: 1px solid #b6b6b6;
+	background-color: transparent;
+	color: #93cdff;
+	font-weight: 600;
+	font-size: 18px;
+	transition: all ease .3s;
+	cursor: pointer;
+}
+
+.logout-btn:hover{
+	background-color: #444750;
+
+}
+
+.soon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+
+	font-size: 40px;
+}
+
+.error{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	font-size: 50px;
+
+}
+
+.home{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.home__heading{
+	font-size: 50px;
+	font-weight: 600;
+}
+
+.home__description{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.signin{
+	height: 100%;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	flex-direction: column;
+}
+.signin-btn{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
 }

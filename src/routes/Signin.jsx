@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { UserAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
 
 const Signin = () => {
 	const { googleSignIn } = UserAuth();
@@ -15,9 +16,9 @@ const Signin = () => {
 	};
 
 	return (
-		<div>
+		<div className="signin">
 			<h1 className="heading-1">Sing in</h1>
-			<button onClick={handleSignIn}>Google btn</button>
+			<button className="signin-btn" onClick={handleSignIn}> <FcGoogle/> Google btn</button>
 		</div>
 	);
 };
