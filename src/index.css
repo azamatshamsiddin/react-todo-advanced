@@ -351,4 +351,6 @@ aside {
 	align-items: center;
 	gap: 10px;
 	cursor: pointer;
+	font-size: 20px;
+	padding: 10px;
 }
